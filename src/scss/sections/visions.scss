@@ -1,0 +1,57 @@
+@use "../util/" as *;
+
+.visions {
+	@apply flex gap-20 my-40 items-center;
+	&__col-right {
+		@apply h-full w-1/2 grid grid-cols-6 grid-rows-6 place-items-center;
+	}
+
+	&__col-left {
+		@apply w-1/2;
+	}
+
+	&__list {
+		@apply grid grid-cols-4 grid-rows-2 gap-x-8 gap-y-10;
+	}
+}
+
+.vision {
+	&__title {
+		@apply flex gap-4 items-center;
+	}
+
+	&-1 {
+		@apply col-start-1 col-span-2;
+	}
+
+	&-2 {
+		@apply col-start-3 col-span-2;
+	}
+
+	&-3 {
+		@apply col-span-4 row-start-2 row-end-3;
+	}
+
+	&-img {
+		&--1 {
+			@apply col-start-1 col-span-4 row-start-4 row-span-3 transform -translate-x-10 z-10 justify-self-end;
+		}
+		&--2 {
+			@apply col-start-2 col-span-3 row-start-1 row-span-3 z-20 self-start justify-self-end;
+		}
+		&--3 {
+			@apply col-start-4 col-span-3 row-start-3 row-span-3 z-30 justify-self-end self-start transform -translate-x-8;
+		}
+		&--4 {
+			@apply col-start-5 row-start-1 z-40 self-start justify-self-start transform -translate-y-16;
+		}
+	}
+}
+
+.rounded-left-box {
+	width: rem(445);
+	height: rem(350);
+	background: #fff3c8;
+	border-top-left-radius: rem(145);
+	@apply col-start-1 col-span-full row-start-2 row-span-4 transform -translate-x-16;
+}

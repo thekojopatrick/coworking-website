@@ -1,0 +1,63 @@
+@use "../util/" as *;
+
+.services {
+	height: 90vh;
+	@apply flex gap-20 my-40 items-center;
+
+	&__col-left {
+		@apply grow h-full w-1/2 grid grid-cols-6 grid-rows-6;
+	}
+
+	&__col-right {
+		@apply grow w-1/2;
+	}
+
+
+
+	&__btns {
+		@apply flex items-center gap-10 mt-8;
+	}
+
+	&__border-curved {
+		@apply justify-self-center col-start-1 col-span-6 row-start-1 row-span-5 z-10;
+	}
+
+	&__background-circle {
+		@apply row-start-1 row-span-4 col-start-1 col-span-4 transform -translate-x-48;
+	}
+
+	&__carousel {
+		&-image {
+			@apply justify-self-center col-start-1 row-start-1 col-span-6 row-span-5 p-2 z-20;
+		}
+
+		&-dots {
+			@apply transform -translate-y-8 flex gap-2 row-start-6 row-end-6 justify-self-center self-center col-span-6;
+		}
+
+		&-dot {
+			@apply w-2.5 h-2.5 bg-gray-200 rounded-sm;
+
+			&--active {
+				@apply bg-orange-red;
+			}
+		}
+	}
+
+	&__calendar-alarm {
+		@apply z-30 col-start-5 col-end-7 row-start-5 justify-self-center self-center relative;
+	}
+
+	&__alarm {
+		@apply absolute -top-4 -left-4 shadow-lg rounded-full;
+	}
+
+    &__calendar{
+        @apply shadow-2xl;
+    }
+}
+
+.full-yellow-circle {
+	@apply w-96 h-96 bg-yellow-light rounded-full row-start-2 row-span-4 col-start-1 col-span-4 hidden;
+}
+

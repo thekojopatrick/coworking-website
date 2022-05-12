@@ -1,0 +1,24 @@
+.about-us{
+    @apply flex flex-col justify-center my-40;
+
+    &__heading{
+        @apply text-center flex flex-col items-center w-1/2 mx-auto;
+    }
+  
+}
+
+.features{
+     @apply flex gap-4 items-center mt-16;
+}
+
+.feature{
+    @apply flex flex-col gap-4 justify-center items-center text-center;
+
+    &__title{
+        @apply text-lg font-semibold;
+    }
+
+    &__body{
+        @apply xl:w-4/5;
+    }
+}

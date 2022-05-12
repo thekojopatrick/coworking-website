@@ -1,0 +1,29 @@
+.search {
+	&-form {
+		@apply flex place-items-center h-24 p-4 w-full backdrop-blur-2xl rounded-md;
+		background: rgba(243, 243, 243, 0.6);
+	}
+
+	&-input {
+		&__icon {
+			@apply p-4;
+		}
+
+		&__city {
+			@apply bg-transparent grow;
+		}
+
+		&__location {
+			@apply bg-transparent grow;
+		}
+	}
+
+	&-btn {
+		@apply shrink-0;
+	}
+}
+
+input::placeholder{
+	@apply  text-lg;
+	color: #989898;
+}

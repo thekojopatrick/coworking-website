@@ -1,0 +1,24 @@
+.become-member {
+	@apply flex gap-20 my-40 items-center;
+	&__col-left {
+		@apply h-full w-1/2 self-end;
+	}
+
+	&__col-right {
+		@apply grow w-1/2 grid grid-cols-6 grid-rows-6 place-items-center;
+	}
+
+    &__btns{
+        @apply flex gap-10;
+    }
+
+	&__img {
+		&--1 {
+			@apply col-start-1 col-span-5 row-span-full;
+		}
+
+		&--2 {
+			@apply col-start-1 col-span-5 row-span-full transform translate-x-8 translate-y-4;
+		}
+	}
+}

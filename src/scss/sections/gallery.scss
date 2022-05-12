@@ -1,0 +1,31 @@
+.gallery {
+	@apply flex gap-20 my-40 items-center;
+
+	&__col-left {
+		@apply grow w-1/2 self-end;
+	}
+
+	&__col-right {
+		@apply grow w-1/2 grid place-items-center;
+	}
+
+	&__group {
+		@apply grid grid-cols-9 grid-rows-6 gap-4 mt-10;
+	}
+
+	&__img {
+		&--1 {
+            @apply col-start-1 col-span-4 row-start-1 row-span-3;
+
+		}
+		&--2 {
+            @apply col-start-4 col-span-6 row-start-1 row-span-3 mx-10;
+		}
+		&--3 {
+            @apply row-start-4 row-span-3 col-start-1 col-span-6;
+		}
+		&--4 {
+            @apply row-start-4 row-span-3 col-start-6 col-span-4 mx-12 2xl:mx-4 ;
+		}
+	}
+}

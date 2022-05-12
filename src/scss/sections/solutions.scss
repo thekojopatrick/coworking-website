@@ -1,0 +1,18 @@
+.solutions {
+	@apply flex gap-20 my-40 items-center;
+	&__col-right {
+		@apply h-full w-1/2 grid grid-cols-6 grid-rows-6 gap-4 overflow-hidden;
+	}
+
+	&__col-left {
+		@apply w-1/2;
+	}
+
+    &-img--1{
+        @apply col-start-1 col-span-6 row-span-full ;
+    }
+
+    &-img--2{
+        @apply col-start-1 col-span-6 row-span-full transform translate-x-full mx-4;
+    }
+}

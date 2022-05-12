@@ -1,0 +1,47 @@
+.footer {
+	@apply relative;
+
+	&::before {
+		content: "";
+		@apply absolute inset-0;
+		background: linear-gradient(180deg, rgba(253, 91, 47, 0) 0%, #fd5b2f 100%);
+		opacity: 0.1;
+	}
+
+	.footer__nav {
+		@apply container mx-auto flex gap-x-10 py-16 items-center;
+	}
+
+	&__company-info {
+		@apply basis-1/4 flex flex-col gap-y-8;
+	}
+
+	&__logo {
+		@apply text-3xl;
+	}
+
+	&__list {
+		@apply flex gap-8 grow w-full justify-start;
+
+		&-group {
+			@apply grow flex flex-col place-items-center gap-y-2 text-left;
+		}
+
+		&--title {
+			@apply text-lg text-orange-red;
+		}
+	}
+
+	&__item {
+		@apply text-left;
+	}
+
+	&__social-links {
+		@apply flex gap-x-4 items-center;
+	}
+
+	&__social-link {
+		@apply bg-white p-2 shadow-md w-10 h-10 grid place-items-center rounded-full;
+	}
+}
+

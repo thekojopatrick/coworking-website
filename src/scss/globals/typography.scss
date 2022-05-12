@@ -1,0 +1,37 @@
+@use "../util" as *;
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+	line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+.heading {
+	&-title {
+		@apply text-5xl w-4/5;
+	}
+
+	&-section {
+		@apply text-base uppercase text-orange-red;
+	}
+
+	&-feature {
+	}
+}
+
+.body-text {
+	&-1 {
+		@apply text-base leading-loose my-12;
+	}
+
+	&-2 {
+		@apply text-sm leading-loose;
+	}
+}
